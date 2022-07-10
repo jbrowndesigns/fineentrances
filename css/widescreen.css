@@ -1,0 +1,9 @@
+/*#services .items .item {*/
+/*display: flex;*/
+/*text-align: left;*/
+/*}*/
+
+#contact .map {
+  flex: 2;
+}
+

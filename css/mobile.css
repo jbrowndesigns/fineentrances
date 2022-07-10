@@ -1,0 +1,94 @@
+
+#services .items {
+display: block;
+padding: 1rem;
+}
+
+#contact .map{
+  display: none;
+}
+
+#services .items .item i {
+  margin-right: 1.3rem;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+#gallery .circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.gallery-sub {
+  display: block;
+  position: relative;
+  bottom: -100px;
+  font-size: .9rem;
+  text-align: center;
+  color: #000;
+}
+
+.mobile .text-center {display: block; text-align: center;}
+
+/*Smart Phones*/
+@media(max-width: 700px) {
+
+ #showcase {
+   display: block;
+   position: relative;
+ }
+ 
+  #showcase .showcase-content {
+    display: block;
+    padding: 2rem 0;
+    /* position: absolute; added
+    top: 0;
+    left: 0; added */
+  }
+ 
+  .circles a {
+    position: relative;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #navbar .logo {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  #navbar ul {
+    padding: 0.5rem;
+  }
+  
+  #navbar ul li a {
+    padding: 0.75rem .25rem;
+  }
+  
+  #about {
+    display: block;
+  }
+  
+  .about-img {
+    display: block;
+    height: 300px;
+  }
+
+  #gallery .circles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #grid {
+    grid-template-columns: 1fr;
+  }
+
+
+}

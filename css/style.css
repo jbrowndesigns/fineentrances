@@ -1,0 +1,473 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #333;
+  --text-primary: yellow;
+  --text-secondary: #333;
+  --btn-color: yellow;
+  --max-width: 1200px;
+  --img-1: url(../img/entrances/gate1.jpg);
+  --img-2: url(../img/fabrications/firepit.jpg);
+  --img-3: url(../img/auto/trailer.jpg);
+  --img-4: url(../img/gates/gate6.jpg);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Permanent Marker", cursive;
+}
+
+body {
+  font-family: "Permanent Marker", cursive;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Hidden Classes */
+.gallery-sub {
+  display: none;
+}
+
+/* Utility Classes */
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  color: var(--text-secondary);
+  background: var(--btn-color);
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* Nav Bar */
+#navbar {
+  background: var(--secondary-color);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: var(--text-primary);
+  /* background-image: url(../img/wood.jpg); */
+  color: var(--text-secondary);
+  border-radius: 5px;
+}
+
+#navbar ul li .active {
+  color: var(--text-primary);
+}
+
+/* Showcase */
+
+#showcase {
+  position: relative;
+  background: var(--secondary-color) url("../img/headerIMG.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  color: var(--primary-color);
+}
+
+#showcase .showcase-content {
+  /*display: none;*/
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+
+  /* Overlay */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+/* #services Section */
+
+.text-primary {
+  text-shadow: 2px 2px 4px #000000;
+} /* Target more precise if needed */
+
+#services .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#services .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#services .items .item i {
+  background: var(--btn-color);
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* #about section */
+
+#about {
+  display: flex;
+}
+
+#about div {
+  flex: 1;
+}
+
+#about .about-img {
+  background: url("../img/rudy.jpg") no-repeat center center/cover;
+}
+
+#about p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* #gallery section */
+
+/* #gallery {
+  
+} */
+
+#gallery .circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gallery .circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  margin: 3rem 2rem;
+}
+
+@media (max-width: 1015px) {
+  #gallery .circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+  }
+}
+
+#gallery .circle:hover {
+  opacity: 0.4;
+  border: solid;
+  border-color: var(--text-primary);
+}
+
+.img1 {
+  background: var(--img-1) no-repeat center center/cover;
+}
+
+.img2 {
+  background: var(--img-2) no-repeat center center/cover;
+}
+
+.img3 {
+  background: var(--img-3) no-repeat center center/cover;
+}
+
+.img4 {
+  background: var(--img-4) no-repeat center center/cover;
+}
+
+/*#contact Section*/
+
+#contact {
+  display: flex;
+}
+
+#contact div {
+  flex: 1;
+  min-height: 300px;
+}
+
+.map {
+  background: url("../img/indio.png") no-repeat center center/cover;
+}
+
+/* Footer */
+
+#footer {
+  display: flex;
+}
+
+#footer .container {
+  align-content: center;
+}
+
+#footer .container a {
+  color: #fff;
+}
+
+#footer .container a:hover {
+  color: var(--text-primary);
+}
+
+#footer .sub-text {
+  font-size: 0.9rem;
+  padding-top: 2rem;
+}
+
+/*GALLERY PAGE*/
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+#grid .items {
+  height: 400px;
+  border: #ccc 1px solid;
+}
+
+#grid .items:hover {
+  opacity: 0.5;
+  border: solid;
+  border-color: var(--text-primary);
+}
+
+/*********************** Gallery Image Selection */
+/* Entrances */
+#grid .ent-1 {
+  background: url(../img/entrances/gate1.jpg) no-repeat center center/cover;
+}
+#grid .ent-2 {
+  background: url(../img/entrances/gate3.png) no-repeat center center/cover;
+}
+#grid .ent-3 {
+  background: url(../img/entrances/door.jpg) no-repeat center center/cover;
+}
+#grid .ent-4 {
+  background: url(../img/entrances/vine-gate.jpg) no-repeat center center/cover;
+}
+#grid .ent-5 {
+  background: url(../img/entrances/small-wood-gate.jpg) no-repeat center
+    center/cover;
+}
+#grid .ent-6 {
+  background: url(../img/entrances/white-gate.jpg) no-repeat center center/cover;
+}
+/* Fabrications */
+#grid .fab-1 {
+  background: url(../img/fabrications/firepit2.jpg) no-repeat center
+    center/cover;
+}
+#grid .fab-2 {
+  background: url(../img/fabrications/firepit.jpg) no-repeat center center/cover;
+}
+#grid .fab-3 {
+  background: url(../img/fabrications/headRest.png) no-repeat center
+    center/cover;
+}
+#grid .fab-4 {
+  background: url(../img/fabrications/bf1.jpg) no-repeat center center/cover;
+}
+#grid .fab-5 {
+  background: url(../img/fabrications/bf2.jpg) no-repeat center center/cover;
+}
+#grid .fab-6 {
+  background: url(../img/fabrications/ctop.jpg) no-repeat center center/cover;
+}
+#grid .fab-7 {
+  background: url(../img/fabrications/fs2.jpg) no-repeat center center/cover;
+}
+#grid .fab-8 {
+  background: url(../img/fabrications/lr1.jpg) no-repeat center center/cover;
+}
+#grid .fab-9 {
+  background: url(../img/fabrications/lr2.jpg) no-repeat center center/cover;
+}
+/* Auto */
+#grid .auto-1 {
+  background: url(../img/auto/shelbys1.jpg) no-repeat center center/cover;
+}
+#grid .auto-2 {
+  background: url(../img/auto/shelbys2.jpg) no-repeat center center/cover;
+}
+#grid .auto-3 {
+  background: url(../img/auto/shelbys3.jpg) no-repeat center center/cover;
+}
+#grid .auto-4 {
+  background: url(../img/auto/car1.png) no-repeat center center/cover;
+}
+#grid .auto-5 {
+  background: url(../img/auto/car2.png) no-repeat center center/cover;
+}
+#grid .auto-6 {
+  background: url(../img/auto/car3.png) no-repeat center center/cover;
+}
+#grid .auto-7 {
+  background: url(../img/auto/trailer.jpg) no-repeat center center/cover;
+}
+#grid .auto-8 {
+  background: url(../img/auto/mf1.jpg) no-repeat center center/cover;
+}
+#grid .auto-9 {
+  background: url(../img/auto/exhaust.jpg) no-repeat center center/cover;
+}
+#grid .auto-10 {
+  background: url(../img/auto/trailer1.jpg) no-repeat center center/cover;
+}
+#grid .auto-11 {
+  background: url(../img/auto/trailer2.jpg) no-repeat center center/cover;
+}
+#grid .auto-12 {
+  background: url(../img/auto/trailer3.jpg) no-repeat center center/cover;
+}
+/* Gates */
+#grid .gate-1 {
+  background: url(../img/gates/gate6.jpg) no-repeat center center/cover;
+}
+#grid .gate-2 {
+  background: url(../img/gates/woodGate.png) no-repeat center center/cover;
+}
+#grid .gate-3 {
+  background: url(../img/gates/metal-fence.png) no-repeat center center/cover;
+}
+#grid .gate-4 {
+  background: url(../img/gates/wood-gate1.jpg) no-repeat center center/cover;
+}
+#grid .gate-5 {
+  background: url(../img/gates/wood-gate2.jpg) no-repeat center center/cover;
+}
+#grid .gate-6 {
+  background: url(../img/gates/wood-gate3.jpg) no-repeat center center/cover;
+}
+#grid .gate-7 {
+  background: url(../img/gates/gate4.jpg) no-repeat center center/cover;
+}
+#grid .gate-8 {
+  background: url(../img/gates/dog-gate.jpg) no-repeat center center/cover;
+}
+#grid .gate-9 {
+  background: url(../img/gates/metal-gate.jpg) no-repeat center center/cover;
+}
+#grid .gate-10 {
+  background: url(../img/gates/lamberto1.jpg) no-repeat center center/cover;
+}
+#grid .gate-11 {
+  background: url(../img/gates/lamberto2.jpg) no-repeat center center/cover;
+}
+#grid .gate-12 {
+  background: url(../img/gates/lamberto3.jpg) no-repeat center center/cover;
+}
+/* Hot Fixes */
+@media screen and (max-width: 946px) and (min-width: 701px) {
+  #about {
+    display: block;
+  }
+
+  .about-img {
+    display: block;
+    height: 300px;
+  }
+}
